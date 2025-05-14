@@ -1,0 +1,85 @@
+@import './variable.css';
+
+.wrapper {
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+.pageWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-color-light);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  text-align: center;
+  color: var(--common-text-color);
+  cursor: pointer;
+}
+
+.thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: var(--input-color);
+  cursor: not-allowed;
+}
+
+/* Breakpoints */
+@media screen and (max-width: 991px) {
+  .thumb {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .thumb {
+    height: 140px;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+}

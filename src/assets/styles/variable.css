@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --text-color: #333333;
+  --bg-color: #f9f9f9;
+  --bg-color-light: #ffffff;
+  --loader-color: #f3f3f3;
+  --eye-color: #ebe7e7;
+  --common-hover-color: #1b4f70;
+  --common-text-color: #010101;
+  --input-color: #ccc;
+  --button-text-color: #fff;
+  --logout-button-color: #f0f0f0;
+  --box-shadow-color: #00000020;
+  --loader-border-color: #f3f3f3;
+  --box-shadow-rgba: rgba(0, 0, 0, 0.1);
+  --review-data-color: #808080;
+  --tags-text-color: #333;
+  --tags-bg-color: #eee;
+}

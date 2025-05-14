@@ -1,0 +1,155 @@
+@import './variable.css';
+
+.wrapper {
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+.pageWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg-color-light);
+  box-shadow: 0 0 10px var(--box-shadow-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+}
+
+.details {
+  flex: 1;
+}
+
+.details p {
+  margin: 0.5rem 0;
+  color: var(--common-text-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--tags-text-color);
+  margin: 2rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tags li {
+  list-style: none;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--tags-bg-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--tags-text-color);
+}
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.imageGallery img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.review {
+  background-color: var(--button-text-color);
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px var(--box-shadow-color);
+  border-radius: 4px;
+}
+
+.review p {
+  margin: 0.3rem 0;
+}
+
+.reviewDate {
+  font-size: 0.85rem;
+  color: var(--review-date-color);
+}
+
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.loader {
+  border: 5px solid var(--loader-border-color);
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Breakpoints */
+@media screen and (max-width: 991px) {
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumbnail {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .review {
+    padding: 0.8rem;
+  }
+
+  .imageGallery img {
+    width: 80px;
+  }
+}
